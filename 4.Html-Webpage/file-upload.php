@@ -1,7 +1,7 @@
 <?php
-if($_FILES['photo']) {
-    move_uploaded_file($_FILES['photo']['tmp_name'],'./files/image.png');
-}
+    if ( $_FILES['photo'] ) {
+        move_uploaded_file( $_FILES['photo']['tmp_name'], './files/image.png' );
+    }
 ?>
 
 <!DOCTYPE html>
@@ -42,8 +42,8 @@ if($_FILES['photo']) {
           <pre>
             <p>
                 <?php
-                    print_r($_POST);
-                    print_r($_FILES);
+                    print_r( $_POST );
+                    print_r( $_FILES );
                 ?>
             </p>
           </pre>
