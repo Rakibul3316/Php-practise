@@ -13,5 +13,4 @@ echo PHP_EOL;
 // আবার একটি শব্দের দৈঘ্যই যদি ২৬ অক্ষরের বেশি হয় তাহলে সেই অক্ষরকে ভাঙ্গার জন্য 3rd parameter এ এর ধরণ বা কি দিয়ে ভাঙ্গবে এবং 4th patameter এ true লিখতে হবে। যেমন:
 
 $string1 = 'Contrary to popularrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old';
-
 echo wordwrap( $string1, 26, "\n", true );
