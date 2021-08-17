@@ -41,7 +41,7 @@ interface BaseHuman extends BaseAnimal {
 
 // abstract class interface কে implements করতে পারে।
 
-abstract Class AbstractHuman implements BaseHuman {
+abstract class AbstractHuman implements BaseHuman {
     abstract public function run();
     function eat() {
         echo 'i am eating';

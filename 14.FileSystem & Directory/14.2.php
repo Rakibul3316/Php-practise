@@ -17,6 +17,7 @@ deleteDir( getcwd() . DIRECTORY_SEPARATOR . 'test' );
 function deleteDir( $path ) {
     // print_r( scandir( $path ) );
     $filesInPath = scandir( $path );
+    // এখানে তিনটা ফাইল থাকবে -> [0] => .(current path), [1] => ..(parent path), [2] => f.txt
     if ( count( $filesInPath ) > 2 ) {
         foreach ( $filesInPath as $file ) {
             if ( "." != $file && ".." != $file ) {

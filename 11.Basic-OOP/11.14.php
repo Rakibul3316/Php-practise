@@ -2,13 +2,13 @@
 
 class A {
     static function sayHi() {
-        echo "Hi form parent";
+        echo "Hi form parent\n";
     }
 }
 
 class B extends A {
     static function sayHi() {
-        echo "Hi form child";
+        echo "Hi form child\n";
         parent::sayHi(); // static function এ child থেকে parent method কে কল করার নিয়ম।
     }
 }

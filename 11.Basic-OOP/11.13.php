@@ -7,6 +7,7 @@ class MathCalculator {
     static $name;
     static function fibonacci( $n ) {
         // $this->number = 12; // এখানে এই ফাংশনটা static, public না তাই এখানে this ব্যবহার করলে error আসবে।
+        // static function এর ভিতর থেকে private or public variable কে self দিয়েও কল করা যাবে না। static function এর ভিতর অবশ্যই ‍static variable কেই কল করতে হবে।
         self::$name;
         self::doSomething();
         echo "Fibonacci series is up to {$n}\n";
@@ -29,4 +30,5 @@ $mathc = new MathCalculator();
 $mathc->factorial( 5 );
 
 MathCalculator::fibonacci( 8 );
+//static method এর ক্ষেত্রে ক্লাস তৈরি না করেই ফাংশনকে কল করা যায়।
 echo MathCalculator::$name;
