@@ -1,0 +1,10 @@
+<?php
+
+/*
+use SUM
+
+select SUM(AVAIL_BALANCE), CUST_ID FROM account GROUP BY CUST_ID;
+
+select SUM(AVAIL_BALANCE), CUST_ID, OPEN_BRANCH_ID FROM account GROUP BY CUST_ID, OPEN_BRANCH_ID;
+
+ */
